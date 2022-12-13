@@ -18,7 +18,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./assets/images/japan.png) ;
+    flex-direction: column  ;
+    background-color: #15161D;
   
 }
 
@@ -26,4 +27,27 @@ body{
     font-family: "Japan" ;
     color: #fff;
     font-size: 7rem;
+}
+
+.carrousel-towns{
+    overflow-x:scroll;
+}
+
+.Tokyo{
+    background-image: url(./assets/images/tokyo.png);}
+
+.Osaka{
+    background-image: url(./assets/images/osaka.png);
+
+}
+
+.Kyoto{
+    background-image: url(./assets/images/kyoto.png);
+
+}
+
+.Tokyo,
+.Osaka,
+.Kyoto{
+    background-attachment: fixed;
 }
