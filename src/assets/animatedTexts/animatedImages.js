@@ -36,12 +36,17 @@ const AnimatedImage = ({cname}) => {
     return (
         <motion.div
             variants={child}
-            className={cname}
-            style={{ overflow: "hidden", display: "flex", width: "390px", height: "700px" }}
+            style={{  display: "flex", width: "390px", height: "700px", alignItems:"center", justifyContent:"center" }}
             initial="hidden"
             whileInView="visible"
         >
-            <svg className='plus-icon'></svg>
+            <div style={{  display: "flex", width: "390px", height: "700px" }}className={cname}></div>
+            <motion.button
+                whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.1 },
+              }}
+               className='plus-icon'></motion.button>
         </motion.div>
     )
 }

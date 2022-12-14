@@ -6,12 +6,13 @@ import AnimatedTitle from "../animatedTexts/animeatedTitle"
 import AnimatedP from "../animatedTexts/animatedP"
 
 
+
 function Japan() {
 
   const towns = ["Tokyo", "Kyoto", "Osaka", "Nagoya"]
   return (
-    <>
-      <div className='main-container'>
+    <div>
+      <div className='main-container' data-scroll-container>
         <AnimatedTitle className="main-title" text={"JAPAN"} style={{ fontFamily: "Japan" }} />
         <AnimatedSubtitle className="main-title" text={"日本"} />
       </div>
@@ -27,7 +28,7 @@ function Japan() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
