@@ -19,7 +19,7 @@ const AnimatedP = ({text}) => {
             y: 0,
             transition: {
                 type: "spring",
-                delay: 1,
+                delay: 0.2,
                 damping: 18,
                 stiffness: 100,
             },
@@ -40,7 +40,7 @@ const AnimatedP = ({text}) => {
             style={{ overflow: "hidden", display: "flex"}}
             variants={container}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
         >
             {words.map((word, index) => (
                 <motion.p

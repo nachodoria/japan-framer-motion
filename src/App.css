@@ -4,10 +4,19 @@
    
 }
 
+html{
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 body{
     margin: 0;
-    padding: 0
+    padding: 0;
+    display: block;
+
 }
 
 .main-container{
@@ -34,7 +43,9 @@ body{
 }
 
 .Tokyo{
-    background-image: url(./assets/images/tokyo.png);}
+    background-image: url(./assets/images/tokyo.png);
+}
+
 
 .Osaka{
     background-image: url(./assets/images/osaka.png);
@@ -45,9 +56,26 @@ body{
     background-image: url(./assets/images/kyoto.png);
 
 }
+.Nagoya{
+    background-image: url(./assets/images/nagoya.png);
+
+}
+
 
 .Tokyo,
 .Osaka,
-.Kyoto{
+.Kyoto,
+.Nagoya{
     background-attachment: fixed;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-icon{
+    background-image: url(./assets/images/plus-circle.svg);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
