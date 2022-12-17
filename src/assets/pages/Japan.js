@@ -1,6 +1,5 @@
 import '../../App.css';
-import { motion } from 'framer-motion';
-import AnimatedImage from '../animatedTexts/animatedImages';
+import { delay, motion } from 'framer-motion';
 import AnimatedSubtitle from '../animatedTexts/animatedSubtitle';
 import AnimatedTitle from "../animatedTexts/animeatedTitle"
 import AnimatedP from "../animatedTexts/animatedP"
@@ -16,18 +15,28 @@ function Japan() {
         <AnimatedTitle className="main-title" text={"JAPAN"} style={{ fontFamily: "Japan" }} />
         <AnimatedSubtitle className="main-title" text={"日本"} />
       </div>
-      <div className='carrousel-towns' style={{height:"110vh", flexDirection: "row", display: "flex", backgroundColor:"#15161D" }}>
-        {towns.map((i, a) => (
-          <div style={{ disply: "flex", flexDirection: "column", padding: "100px", transform: "scale(0.8)" }}>
-            <div className='images'>
-              <AnimatedImage cname={towns[a]}></AnimatedImage>
-            </div>
-            <div className='image-indicator'>
-              <AnimatedP text={towns[a]}></AnimatedP>
-            </div>
-          </div>
-        ))}
-      </div>
+      <div className='cities'>
+                <motion.div initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                className='tokyo'>
+                    <AnimatedP text={"TOKYO"}></AnimatedP>
+                </motion.div>
+                <motion.div
+                 initial={{ opacity: 0 }}
+                 whileInView={{ opacity: 1 }}
+                  className='kyoto'>
+                    <AnimatedP text={"KYOTO"}></AnimatedP>
+                </motion.div>
+                <motion.div  initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                     className='osaka'>
+                    <AnimatedP text={"OSAKA"}></AnimatedP>
+                </motion.div>
+                <motion.div  initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }} className='nagoya'>
+                    <AnimatedP text={"NAGOYA"}></AnimatedP>
+                </motion.div>
+        </div>
     </div>
   );
 }

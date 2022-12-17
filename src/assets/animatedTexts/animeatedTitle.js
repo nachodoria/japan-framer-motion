@@ -39,7 +39,7 @@ const AnimatedTitle = ({text, style}) => {
             style={{ overflow: "hidden", display: "flex"}}
             variants={container}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
         >
             {words.map((word, index) => (
                 <motion.h1

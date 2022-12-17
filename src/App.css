@@ -1,7 +1,12 @@
 @font-face {
     font-family: "Japan";
     src: url("./assets/fonts/electroharmonix.ttf");
+
    
+}
+@font-face {
+    font-family: "Hakubo";
+    src: url("./assets/fonts/hakubo.otf");
 }
 
 html{
@@ -9,7 +14,7 @@ html{
     -webkit-font-smoothing: antialiased;
     cursor: default;
     -webkit-tap-highlight-color: transparent;
-    background-color: #15161D;
+    background-color: #181717;
 
 }
 
@@ -18,13 +23,23 @@ body{
     margin: 0;
     padding: 0;
     display: block;
-    
 
 }
-body::-webkit-scrollbar {
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row  ;
+}
+body::-webkit-scrollbar{
     display: none;
 }
-  
+
 
 .main-container{
     height: 100vh;
@@ -44,58 +59,72 @@ body::-webkit-scrollbar {
     font-size: 7rem;
 }
 
-.carrousel-towns{
-    overflow-x:scroll;
-}
 
-.Tokyo{
-    background-image: url(./assets/images/tokyo.png);
-}
-
-
-.Osaka{
-    background-image: url(./assets/images/osaka.png);
-
-}
-
-.Kyoto{
-    background-image: url(./assets/images/kyoto.png);
-
-}
-.Nagoya{
-    background-image: url(./assets/images/nagoya.png);
-
-}
-
-
-.Tokyo,
-.Osaka,
-.Kyoto,
-.Nagoya{
+.tokyo{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    background-image: url(./assets/images/tokyo.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.plus-icon{
-    background-image: url(./assets/images/plus-circle.svg);
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 4;
-    background-color: transparent;
-    border: none;
-    outline: none;
+.tokyo h1{
+    color: white;
 }
 
 
-.plus-icon:hover .Tokyo{
-    filter: opacity(0.2);
-  }
+.kyoto{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/kyoto.png);
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
 
-.carrousel-towns::-webkit-scrollbar {
-    display: none;
 }
-  
+
+.kyoto h1{
+    color: white;
+}
+.osaka{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/osaka.png);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.osaka h1{
+    color: white;
+}
+.nagoya{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/nagoya.png);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.nagoya h1{
+    color: white;
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
