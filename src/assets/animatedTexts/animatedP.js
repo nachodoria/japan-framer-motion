@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import "../../App.css"
 
 const AnimatedP = ({text}) => {
-    const words = text.split("");
+    const words = text.split(""); 
 
     const container = {
         hidden: { opacity: 0 },
@@ -19,7 +19,7 @@ const AnimatedP = ({text}) => {
             y: 0,
             transition: {
                 type: "spring",
-                delay: 0.2,
+                delay: 0.4,
                 damping: 18,
                 stiffness: 100,
             },
@@ -46,7 +46,7 @@ const AnimatedP = ({text}) => {
                 <motion.p
                     variants={child}
                     key={index}
-                    className="japan-title"
+                    className="titles"
                     style={{fontFamily: "Hakubo", marginTop: "20px", fontSize:"40px"}}
                 >
                     {word}

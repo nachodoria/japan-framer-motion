@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import "../../App.css"
 
 const AnimatedSubtitle = ({text}) => {
-    const words = text.split(" ");
+    const words = text.split("");
 
     const container = {
         hidden: { opacity: 0 },

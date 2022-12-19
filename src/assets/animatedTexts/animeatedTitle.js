@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import "../../App.css"
 
-const AnimatedTitle = ({text, style}) => {
+const AnimatedTitle = ({text}) => {
     const words = text.split("");
 
     const container = {
@@ -46,7 +46,7 @@ const AnimatedTitle = ({text, style}) => {
                     variants={child}
                     key={index}
                     className="japan-title"
-                    style={{color: index == 1 ? "#BC012C" : "white"}}
+                    style={{color: index == 1 ? "#BC012C" : "black"}}
                 >
                     {word}
                 </motion.h1>
