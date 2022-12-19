@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import "../../App.css"
 
-const AnimatedCitie = ({ text }) => {
+const AnimatedCitie = ({text}) => {
     const words = text.split("");
 
     const container = {
@@ -13,7 +13,7 @@ const AnimatedCitie = ({ text }) => {
         }),
     };
 
-    const childText = {
+    const child = {
         visible: {
             opacity: 1,
             y: 0,
@@ -34,63 +34,29 @@ const AnimatedCitie = ({ text }) => {
             },
         },
     };
-    const childPlus = {
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                type: "spring",
-                delay: 0.4,
-                damping: 18,
-                stiffness: 100,
-            },
-        },
-        hidden: {
-            opacity: 0,
-            x: 20,
-            transition: {
-                type: "spring",
-                damping: 18,
-                stiffness: 100,
-            },
-        },
-    };
-    
+ 
 
     return (
+        
         <motion.div
             style={{ overflow: "hidden", display: "flex" }}
             variants={container}
             initial="hidden"
             whileInView="visible"
         >
-            <motion.div
-                style={{ overflow: "hidden", display: "flex" }}
-                variants={childPlus}
-                initial="hidden"
-                whileInView="visible"
-                className='plus-icon'
-            >
-            </motion.div>
+            
             {words.map((word, index) => (
-                <motion.p
-                    variants={childText}
+                <motion.span
+                    variants={child}
                     key={index}
                     className="titles"
                     style={{ fontFamily: "Hakubo", marginTop: "20px", fontSize: "40px" }}
                 >
                     {word}
-                </motion.p>
+                </motion.span>
             ))}
-            <motion.div
-                style={{ overflow: "hidden", display: "flex" }}
-                variants={childPlus}
-                initial="hidden"
-                whileInView="visible"
-                className='plus-icon'
-            >
-            </motion.div>
         </motion.div>
+       
     )
 }
 

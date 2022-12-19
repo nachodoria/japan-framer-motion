@@ -1,8 +1,11 @@
 import React from 'react'
-import Japan from './assets/pages/japan'
+import { BrowserRouter } from 'react-router-dom'
+import AnimatedRoutes from './assets/animatedTexts/AnimatedRoutes'
 
 export default function App() {
   return (
-   <Japan/>
+  <BrowserRouter>
+     <AnimatedRoutes/>
+   </BrowserRouter>
   )
 }

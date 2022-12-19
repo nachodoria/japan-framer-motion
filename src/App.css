@@ -59,6 +59,7 @@ body::-webkit-scrollbar{
     font-family: "Japan" ;
     color: rgb(255, 255, 255);
     font-size: 7rem;
+    cursor: pointer;
 }
 
 .japan-title{
@@ -77,6 +78,8 @@ body::-webkit-scrollbar{
     background-image: url(./assets/images/tokyo.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+
 }
 
 .tokyo h1{
@@ -94,6 +97,8 @@ body::-webkit-scrollbar{
     background-size: auto;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+
 
 }
 
@@ -109,6 +114,8 @@ body::-webkit-scrollbar{
     background-image: url(./assets/images/osaka.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+
 
 }
 
@@ -124,6 +131,7 @@ body::-webkit-scrollbar{
     background-image: url(./assets/images/nagoya.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -139,4 +147,9 @@ body::-webkit-scrollbar{
     margin-bottom: 45px;
     cursor: pointer;
     margin-inline: 40px;
+}
+
+a{
+    text-decoration: none;
+    outline: transparent;
 }
