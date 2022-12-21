@@ -40,7 +40,8 @@ function Japan() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }} className='nagoya'>
+          whileInView={{ opacity: 1 }} className='nagoya' 
+          >
          <Link to="/nagoya"><AnimatedCitie text={"NAGOYA"}></AnimatedCitie></Link>
 
         </motion.div>

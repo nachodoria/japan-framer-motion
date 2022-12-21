@@ -46,7 +46,7 @@ const AnimatedTitle = ({text}) => {
                     variants={child}
                     key={index}
                     className="japan-title"
-                    style={{color: index == 1 ? "#BC012C" : "black"}}
+                    style={{color: index == 1 ? "#BC012C" : "white"}}
                 >
                     {word}
                 </motion.h1>

@@ -19,7 +19,7 @@ const AnimatedCitie = ({text}) => {
             y: 0,
             transition: {
                 type: "spring",
-                delay: 0.4,
+                delay: 0.2,
                 damping: 18,
                 stiffness: 100,
             },
