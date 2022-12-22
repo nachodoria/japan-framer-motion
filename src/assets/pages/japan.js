@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function Japan() {
   return (
-    <div>
+    <>
       <div className='main-container' data-scroll-container>
         <AnimatedTitle className="main-title" text={"JAPAN"} style={{ fontFamily: "Japan" }} />
         <AnimatedSubtitle className="main-title" text={"日本"} />
@@ -46,7 +46,7 @@ function Japan() {
 
         </motion.div>
       </div>
-    </div>
+    </>
   );
 }
 
