@@ -44,6 +44,7 @@ function Kyoto() {
         >
         </motion.div>
       <motion.h5
+         style={{ overflow: "hidden", display: "flex"}}
         variants={secondary}
         initial="hidden"
         whileInView="visible"
