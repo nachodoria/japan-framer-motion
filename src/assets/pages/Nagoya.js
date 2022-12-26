@@ -50,7 +50,7 @@ function Nagoya() {
         initial="hidden"
         whileInView="visible"
       >Nagoya, located at the center of Honshu (the main island of Japan), is Japan's fourth most populated city with 2.24 million residents. Nagoya has a long history and is the birthplace of three notable feudal lords, Oda Nobunaga, Toyotomi Hideyoshi and Tokugawa Ieyasu.
-      .</motion.h5>
+      </motion.h5>
     </div>
   </motion.div>
   )

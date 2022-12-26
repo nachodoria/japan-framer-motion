@@ -2,16 +2,19 @@
     font-family: "Japan";
     src: url("./assets/fonts/electroharmonix.ttf");
 
-   
+
 }
+
 @font-face {
     font-family: "Hakubo";
     src: url("./assets/fonts/hakubo.otf");
 }
+
 @font-face {
     font-family: "Raleway Heavy";
     src: url("./assets/fonts/Raleway-VariableFont_wght.ttf");
 }
+
 @font-face {
     font-family: "Raleway";
     src: url("./assets/fonts/Raleway-Italic-VariableFont_wght.ttf");
@@ -23,7 +26,7 @@
 }
 
 
-html{
+html {
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
     cursor: default;
@@ -32,14 +35,14 @@ html{
 }
 
 
-body{
+body {
     margin: 0;
     padding: 0;
     display: block;
 
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -47,14 +50,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row  ;
+    flex-direction: row;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
     display: none;
 }
 
 
-.main-container{
+.main-container {
     background-color: #171717;
 
     height: 100vh;
@@ -64,26 +68,26 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column  ;
-  
+    flex-direction: column;
+
 }
 
-.titles{
-    font-family: "Japan" ;
+.titles {
+    font-family: "Japan";
     color: rgb(255, 255, 255);
     font-size: 7rem;
     cursor: pointer;
 }
 
-.japan-title{
-    font-family: "Japan" ;
+.japan-title {
+    font-family: "Japan";
     color: rgb(255, 255, 255);
     font-size: 7rem;
     font-weight: 600;
 }
 
 
-.tokyo{
+.tokyo {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -96,12 +100,12 @@ body::-webkit-scrollbar{
 
 }
 
-.tokyo h1{
+.tokyo h1 {
     color: white;
 }
 
 
-.kyoto{
+.kyoto {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -116,10 +120,11 @@ body::-webkit-scrollbar{
 
 }
 
-.kyoto h1{
+.kyoto h1 {
     color: white;
 }
-.osaka{
+
+.osaka {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -133,10 +138,11 @@ body::-webkit-scrollbar{
 
 }
 
-.osaka h1{
+.osaka h1 {
     color: white;
 }
-.nagoya{
+
+.nagoya {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -149,11 +155,11 @@ body::-webkit-scrollbar{
 
 }
 
-.nagoya h1{
+.nagoya h1 {
     color: white;
 }
 
-.plus-icon{
+.plus-icon {
     background-image: url(./assets/images/plus.svg);
     width: 30px;
     height: 30px;
@@ -163,7 +169,7 @@ body::-webkit-scrollbar{
     margin-inline: 40px;
 }
 
-a{
+a {
     text-decoration: none;
     outline: transparent;
 }
@@ -174,7 +180,7 @@ a{
 .tokyo-container,
 .osaka-container,
 .nagoya-container,
-.kyoto-container{
+.kyoto-container {
     width: 100%;
     height: 100vh;
     background-color: #171717;
@@ -185,9 +191,9 @@ a{
 .tokyo-info,
 .kyoto-info,
 .osaka-info,
-.nagoya-info{
+.nagoya-info {
     color: hwb(0 100% 0%);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
@@ -197,7 +203,7 @@ a{
     margin-top: 50px;
 }
 
-.tokyo-image{
+.tokyo-image {
     width: 300px;
     height: 500px;
     background-image: url(./assets/images/tokyo-info.png);
@@ -206,7 +212,8 @@ a{
     border-color: white;
 
 }
-.osaka-image{
+
+.osaka-image {
     width: 300px;
     height: 500px;
     background-image: url(./assets/images/osaka-info.png);
@@ -215,7 +222,8 @@ a{
     border-color: white;
 
 }
-.nagoya-image{
+
+.nagoya-image {
     width: 300px;
     height: 500px;
     background-image: url(./assets/images/nagoya-info.png);
@@ -224,7 +232,8 @@ a{
     border-color: white;
 
 }
-.kyoto-image{
+
+.kyoto-image {
     width: 300px;
     height: 500px;
     background-image: url(./assets/images/kyoto-info.png);
@@ -238,14 +247,14 @@ a{
 .tokyo-info h5,
 .kyoto-info h5,
 .osaka-info h5,
-.nagoya-info h5{
+.nagoya-info h5 {
     color: white;
     max-width: 500px;
     font-family: "Raleway";
 }
 
 
-.arrow-back{
+.arrow-back {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -255,4 +264,31 @@ a{
     padding: 20px;
     transform: scale(0.7);
     fill: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 800px) {
+
+    .kyoto-image,
+    .tokyo-image,
+    .osaka-image,
+    .nagoya-image {
+        display: none;
+    }
+
+    .kyoto-info,
+    .tokyo-info,
+    .osaka-info,
+    .nagoya-info {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .tokyo-info h5,
+    .kyoto-info h5,
+    .osaka-info h5,
+    .nagoya-info h5 {
+        margin-inline: 30px;
+    }
+
+
 }

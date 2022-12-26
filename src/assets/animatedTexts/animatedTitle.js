@@ -40,6 +40,7 @@ const AnimatedTitle = ({text}) => {
             variants={container}
             initial="hidden"
             whileInView="visible"
+            className='title-container'
         >
             {words.map((word, index) => (
                 <motion.h1
